@@ -1,6 +1,6 @@
 function calculateExpenses(isTrue) {
   const incomeInputText = document.getElementById('income-input');
-  if (incomeInputText > 0) {
+  if (incomeInputText == !-1) {
     console.log('succes');
   } else {
     console.log('opps');
