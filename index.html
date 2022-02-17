@@ -20,11 +20,118 @@
     <!-- main content area -->
     <main>
       <section class="container w-3/4 mx-auto mt-7">
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 gap-6 py-10">
           <div>
             <img src="images/money.png" alt="" />
           </div>
-          <div></div>
+          <!-- calculation area -->
+          <div class="bg-gray-100 rounded py-6">
+            <div class="income-calculate-area text-center">
+              <form action="">
+                <h4 class="font-semibold text-2xl mb-6 mt-9">Income</h4>
+                <div class="income-input">
+                  <!-- income input -->
+                  <label class="font-semibold text-xl" for="income-input"
+                    >Income:</label
+                  >
+                  <input
+                    type="text"
+                    name=""
+                    id="income-input"
+                    class="bg-gray-300 rounded-md p-2 ml-2 w-2/4"
+                  />
+                </div>
+
+                <!-- expenses input area -->
+                <h4 class="font-semibold text-2xl mb-6 mt-9">Expenses</h4>
+                <div class="expenses-input">
+                  <div>
+                    <label
+                      class="font-semibold text-xl text-right"
+                      for="food-input"
+                      >Food:</label
+                    >
+                    <input
+                      type="text"
+                      name=""
+                      id="food-input"
+                      class="bg-gray-300 rounded-md p-2 ml-7 mb-3 w-2/4 border-transparent focus:border-0 focus:ring-0"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="font-semibold text-xl text-right"
+                      for="rent-input"
+                      >Rent:</label
+                    >
+                    <input
+                      type="text"
+                      name=""
+                      id="rent-input"
+                      class="bg-gray-300 rounded-md mb-3 p-2 ml-7 w-2/4"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="font-semibold text-xl text-right"
+                      for="clothes-input"
+                      >Clothes:</label
+                    >
+                    <input
+                      type="text"
+                      name=""
+                      id="clothes-input"
+                      class="bg-gray-300 rounded-md mb-3 p-2 ml-1 w-2/4"
+                    />
+                  </div>
+                </div>
+                <!-- expenses input area end-->
+                <button
+                  id="calculate-btn"
+                  class="text-xl font-bold mt-3 bg-yellow-500 py-2 px-7 text-white rounded-md"
+                >
+                  Calculate
+                </button>
+              </form>
+
+              <!-- calculation results are -->
+              <div class="total-calculate-area mt-5 text-xl font-bold">
+                <h4 class="mb-3">
+                  Total Expenses:<span id="total-Expenses">5500</span>
+                </h4>
+                <h4>Balance:<span id="Balance">5500</span></h4>
+              </div>
+
+              <!-- savings area -->
+              <div class="saving-amount mt-5">
+                <label
+                  class="font-semibold text-xl text-right"
+                  for="clothes-input"
+                  >Savings:</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id="clothes-input"
+                  class="bg-gray-300 rounded-md mb-3 p-2 ml-1 w-1/4"
+                />
+                <span>%</span>
+                <button
+                  id="calculate-btn"
+                  class="text-xl font-bold mt-3 bg-yellow-500 py-2 px-7 text-white rounded-md"
+                >
+                  Save
+                </button>
+              </div>
+              <!-- calculation saving area -->
+              <div class="saving-calculate-area mt-5 text-xl font-bold">
+                <h4 class="mb-3">
+                  Total Expenses:<span id="saving-amount">5500</span>
+                </h4>
+                <h4>Balance:<span id="remainig-Balance">5500</span></h4>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
