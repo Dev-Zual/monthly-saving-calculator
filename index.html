@@ -27,6 +27,19 @@
           <!-- calculation area -->
           <div class="bg-gray-100 rounded py-6">
             <div class="income-calculate-area text-center">
+              <p
+                class="warning-mesege text-red-500 font-semibold text-xl"
+                id="warning-msg"
+              >
+                Please Input A Valid Amount!
+              </p>
+              <p
+                class="text-green-500 success font-semibold text-xl"
+                id="succes-msg"
+              >
+                Success!
+              </p>
+
               <form action="">
                 <h4 class="font-semibold text-2xl mb-6 mt-9">Income</h4>
                 <div class="income-input">
@@ -35,6 +48,7 @@
                     >Income:</label
                   >
                   <input
+                    required
                     type="text"
                     name=""
                     id="income-input"
@@ -52,10 +66,11 @@
                       >Food:</label
                     >
                     <input
+                      required
                       type="text"
                       name=""
                       id="food-input"
-                      class="bg-gray-300 rounded-md p-2 ml-7 mb-3 w-2/4 border-transparent focus:border-0 focus:ring-0"
+                      class="bg-gray-300 rounded-md p-2 ml-7 mb-3 w-2/4"
                     />
                   </div>
                   <div>
@@ -65,6 +80,7 @@
                       >Rent:</label
                     >
                     <input
+                      required
                       type="text"
                       name=""
                       id="rent-input"
@@ -78,6 +94,7 @@
                       >Clothes:</label
                     >
                     <input
+                      required
                       type="text"
                       name=""
                       id="clothes-input"
@@ -85,21 +102,20 @@
                     />
                   </div>
                 </div>
-                <!-- expenses input area end-->
-                <button
-                  id="calculate-btn"
-                  class="text-xl font-bold mt-3 bg-yellow-500 py-2 px-7 text-white rounded-md"
-                >
-                  Calculate
-                </button>
               </form>
-
+              <!-- expenses input area end-->
+              <button
+                id="calculate-btn"
+                class="text-xl font-bold mt-3 bg-yellow-500 py-2 px-7 text-white rounded-md"
+              >
+                Calculate
+              </button>
               <!-- calculation results are -->
               <div class="total-calculate-area mt-5 text-xl font-bold">
                 <h4 class="mb-3">
                   Total Expenses:<span id="total-Expenses">5500</span>
                 </h4>
-                <h4>Balance:<span id="Balance">5500</span></h4>
+                <h4>Balance:<span id="balance">5500</span></h4>
               </div>
 
               <!-- savings area -->
@@ -110,14 +126,15 @@
                   >Savings:</label
                 >
                 <input
+                  required
                   type="text"
                   name=""
-                  id="clothes-input"
+                  id="saving-input"
                   class="bg-gray-300 rounded-md mb-3 p-2 ml-1 w-1/4"
                 />
                 <span>%</span>
                 <button
-                  id="calculate-btn"
+                  id="saving"
                   class="text-xl font-bold mt-3 bg-yellow-500 py-2 px-7 text-white rounded-md"
                 >
                   Save
@@ -126,9 +143,11 @@
               <!-- calculation saving area -->
               <div class="saving-calculate-area mt-5 text-xl font-bold">
                 <h4 class="mb-3">
-                  Total Expenses:<span id="saving-amount">5500</span>
+                  Saving Amount:<span id="saving-amount">5500</span>
                 </h4>
-                <h4>Balance:<span id="remainig-Balance">5500</span></h4>
+                <h4>
+                  Remaining Balance:<span id="remainig-Balance">5500</span>
+                </h4>
               </div>
             </div>
           </div>
