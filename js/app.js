@@ -1,6 +1,10 @@
 function calculateExpenses(isTrue) {
   const incomeInputText = document.getElementById('income-input');
-
+  if (incomeInputText > 0) {
+    console.log('succes');
+  } else {
+    console.log('opps');
+  }
   const incomeNumber = incomeInputText.value;
   const incomeAmount = parseFloat(incomeNumber);
 
@@ -44,7 +48,6 @@ function calculateExpenses(isTrue) {
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
   calculateExpenses(true);
-  // const incomeInputText = document.getElementById('income-input').value;
 });
 
 // savings function
